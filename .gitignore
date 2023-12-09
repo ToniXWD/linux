@@ -171,3 +171,7 @@ sphinx_*/
 
 # Rust analyzer configuration
 /rust-project.json
+
+.vscode
+build/
+busybox-1.36.1/
