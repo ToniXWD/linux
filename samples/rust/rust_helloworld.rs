@@ -19,3 +19,9 @@ impl kernel::Module for RustHelloWorld {
       Ok(RustHelloWorld {})
   }
 }
+
+impl Drop for RustHelloWorld {
+    fn drop(&mut self) {
+        pr_info!("dirver has been unloaded");
+    }
+}
