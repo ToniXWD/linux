@@ -15,13 +15,13 @@ struct RustHelloWorld {}
       
 impl kernel::Module for RustHelloWorld {
   fn init(_name: &'static CStr, _module: &'static ThisModule) -> Result<Self> {
-      pr_info!("Hello World from Rust module");
+      pr_info!("Hello World from Rust module\n");
       Ok(RustHelloWorld {})
   }
 }
 
 impl Drop for RustHelloWorld {
     fn drop(&mut self) {
-        pr_info!("dirver has been unloaded");
+        pr_info!("dirver has been unloaded\n");
     }
 }
