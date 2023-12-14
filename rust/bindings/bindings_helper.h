@@ -38,6 +38,9 @@
 #include <linux/sysctl.h>
 #include <linux/uaccess.h>
 #include <linux/uio.h>
+// ****************************** exercise 3 ******************************
+#include <linux/bindings_exercise.h>
+// ****************************** exercise 3 ******************************
 #include <uapi/linux/android/binder.h>
 
 /* `bindgen` gets confused at certain things. */

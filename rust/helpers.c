@@ -22,6 +22,9 @@
 #include <linux/bug.h>
 #include <linux/build_bug.h>
 #include <linux/clk.h>
+// ****************************** exercise 3 ******************************
+#include <linux/bindings_exercise.h>
+// ****************************** exercise 3 ******************************
 #include <linux/errname.h>
 #include <linux/etherdevice.h>
 #include <linux/fs_parser.h>
@@ -53,6 +56,14 @@ void rust_helper_clk_disable_unprepare(struct clk *clk)
 	return clk_disable_unprepare(clk);
 }
 EXPORT_SYMBOL_GPL(rust_helper_clk_disable_unprepare);
+
+// ****************************** exercise 3 ******************************
+void rust_helper_bindings_exercise(void)
+{
+	bindings_exercise();
+}
+EXPORT_SYMBOL_GPL(rust_helper_bindings_exercise);
+// ****************************** exercise 3 ******************************
 
 int rust_helper_clk_prepare_enable(struct clk *clk)
 {
